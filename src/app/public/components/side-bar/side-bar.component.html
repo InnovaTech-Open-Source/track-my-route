@@ -1,1 +1,87 @@
-<p>side-bar works!</p>
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer mode="side" opened class="sidenav">
+    <mat-toolbar>
+      <h1 class="title-side-nav">TrackMyRoute</h1>
+    </mat-toolbar>
+    <mat-nav-list class="sidenav-btn-container">
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="primary"  class="sidenav-btn" (click)="selectContent('content1')" [color]="buttonColor1">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="notifications-icon" fontIcon="notifications"></mat-icon>
+          Notificaciones
+        </button>
+      </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="primary" class="sidenav-btn" (click)="selectContent('content2')" [color]="buttonColor2">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="search_routes-icon" fontIcon="search"></mat-icon>
+          Buscar Rutas
+        </button>
+      </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="primary"  class="sidenav-btn" (click)="selectContent('content3')" [color]="buttonColor3">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="search_routes-icon" fontIcon="paid"></mat-icon>
+          Pagar Pasaje
+        </button>
+      </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="primary"  class="sidenav-btn" (click)="selectContent('content4')" [color]="buttonColor4">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="search_routes-icon" fontIcon="loyalty"></mat-icon>
+          Promociones
+        </button>
+      </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="primary"  class="sidenav-btn" (click)="selectContent('content5')" [color]="buttonColor5">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="search_routes-icon" fontIcon="history"></mat-icon>
+          Historial de Viajes
+        </button>
+      </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="primary"  class="sidenav-btn" (click)="selectContent('content6')" [color]="buttonColor6">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="search_routes-icon" fontIcon="contact_support"></mat-icon>
+          Soporte y Ayuda
+        </button>
+      </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="primary"  class="sidenav-btn" (click)="selectContent('content7')" [color]="buttonColor7">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="search_routes-icon" fontIcon="settings"></mat-icon>
+          Configuracion
+        </button>
+      </mat-list-item>
+      <mat-list-item class="sidenav-item">
+        <button mat-raised-button color="warn"  class="sidenav-btn">
+          <mat-icon class="icon-btn" aria-hidden="false" aria-label="search_routes-icon" fontIcon="logout"></mat-icon>
+          Cerrar Sesión
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div *ngIf="selectedContent === 'content1'">
+      <h1>Poner Vista Notificaciones</h1>
+      <!--<app-notifications/>-->
+    </div>
+    <div *ngIf="selectedContent === 'content2'">
+      <h1>Poner Vista Buscar Ruta</h1>
+      <!--<app-buscar-ruta/>-->
+    </div>
+    <div *ngIf="selectedContent === 'content3'">
+      <h1>Poner Vista Pagar Pasaje</h1>
+      <!--<app-pagar-pasaje/>-->
+    </div>
+    <div *ngIf="selectedContent === 'content4'">
+      <h1>Poner Vista Promociones</h1>
+      <!--<app-promociones/>-->
+    </div>
+    <div *ngIf="selectedContent === 'content5'">
+      <h1>Poner Vista Historial de Viajes</h1>
+      <!--<app-historial/>-->
+    </div>
+    <div *ngIf="selectedContent === 'content6'">
+      <h1>Poner Vista Soporte y Ayuda</h1>
+      <!--<app-support/>-->
+    </div>
+    <div *ngIf="selectedContent === 'content7'">
+      <h1>Poner Vista Configuración</h1>
+      <!--<app-config/>-->
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
