@@ -6,6 +6,8 @@ import {MatDrawerContent} from "@angular/material/sidenav";
 import {MatButton} from "@angular/material/button";
 import {NgIf} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
+import {HistoryComponent} from "../../pages/history/history.component";
+import {ConfigComponent} from "../../pages/config/config.component";
 
 @Component({
   selector: 'app-side-bar',
@@ -19,7 +21,9 @@ import {MatIcon} from "@angular/material/icon";
     MatDrawer,
     MatButton,
     NgIf,
-    MatIcon
+    MatIcon,
+    HistoryComponent,
+    ConfigComponent
   ],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.css'
