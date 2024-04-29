@@ -7,6 +7,8 @@ import {MatButton} from "@angular/material/button";
 import {NgIf} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {PayTicketComponent} from "../../pages/pay-ticket/pay-ticket.component";
+import {HistoryComponent} from "../../pages/history/history.component";
+import {ConfigComponent} from "../../pages/config/config.component";
 
 @Component({
   selector: 'app-side-bar',
@@ -21,7 +23,9 @@ import {PayTicketComponent} from "../../pages/pay-ticket/pay-ticket.component";
     MatButton,
     NgIf,
     MatIcon,
-    PayTicketComponent
+    PayTicketComponent,
+    HistoryComponent,
+    ConfigComponent,
   ],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.css'
