@@ -8,6 +8,7 @@ import {NgIf} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {PayTicketComponent} from "../../pages/pay-ticket/pay-ticket.component";
 import {HelpComponent} from "../../pages/help/help.component";
+import {NotificationsComponent} from "../../pages/notifications/notifications.component";
 
 @Component({
   selector: 'app-side-bar',
@@ -23,7 +24,8 @@ import {HelpComponent} from "../../pages/help/help.component";
     NgIf,
     MatIcon,
     PayTicketComponent,
-    HelpComponent
+    HelpComponent,
+    NotificationsComponent
   ],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.css'
