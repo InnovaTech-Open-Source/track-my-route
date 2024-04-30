@@ -7,6 +7,7 @@ import {MatButton} from "@angular/material/button";
 import {NgIf} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {PayTicketComponent} from "../../pages/pay-ticket/pay-ticket.component";
+import {HelpComponent} from "../../pages/help/help.component";
 import {HistoryComponent} from "../../pages/history/history.component";
 import {ConfigComponent} from "../../pages/config/config.component";
 
@@ -24,6 +25,7 @@ import {ConfigComponent} from "../../pages/config/config.component";
     NgIf,
     MatIcon,
     PayTicketComponent,
+    HelpComponent,
     HistoryComponent,
     ConfigComponent,
   ],
