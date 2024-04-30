@@ -7,6 +7,7 @@ import {MatButton} from "@angular/material/button";
 import {NgIf} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {PayTicketComponent} from "../../pages/pay-ticket/pay-ticket.component";
+import {PromosComponent} from "../../pages/promos/promos.component";
 import {HelpComponent} from "../../pages/help/help.component";
 
 @Component({
@@ -23,7 +24,8 @@ import {HelpComponent} from "../../pages/help/help.component";
     NgIf,
     MatIcon,
     PayTicketComponent,
-    HelpComponent
+    HelpComponent,
+    PromosComponent,
   ],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.css'
