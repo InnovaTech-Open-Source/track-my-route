@@ -27,7 +27,7 @@ export class RegisterComponent {
     remember: false
   });
   hide = true;
-
+  
   constructor(private fb: FormBuilder, private router: Router) {}
 
   onSubmit() {
