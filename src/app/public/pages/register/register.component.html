@@ -27,9 +27,9 @@
         <mat-label>Repite tu Contraseña</mat-label>
         <input matInput type="password" formControlName="confirmPassword">
       </mat-form-field>
-      <button mat-raised-button color="primary" class="full-width-input">Registrarme</button>
+      <button mat-raised-button color="primary" class="full-width-input" (click)="redirectToLogin()">Registrarme</button>
       <div class="account-existence">
-        <span>¿Ya tienes una cuenta?</span><a mat-button class="login-link" routerLink="/login">Inicia Sesión</a>
+        <span>¿Ya tienes una cuenta?</span><a mat-button class="login-link" (click)="redirectToLogin()">Inicia Sesión</a>
       </div>
     </form>
   </mat-card>

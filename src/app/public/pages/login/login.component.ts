@@ -8,6 +8,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -29,12 +31,19 @@ export class LoginComponent {
   });
   hide = true;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private router: Router) {}
 
   onSubmit() {
     if (this.loginForm.valid) {
       console.log('Form data', this.loginForm.value);
       // Implement your login logic here
     }
+  }
+
+  redirectToSidebar(){
+    this.router.navigateByUrl('/sidebar');
+  }
+  redirectToRegister() {
+    this.router.navigateByUrl('/register');
   }
 }

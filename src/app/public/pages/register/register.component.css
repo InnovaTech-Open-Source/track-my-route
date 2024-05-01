@@ -146,15 +146,15 @@ mat-card {
 
 .account-existence {
   display: flex;
-  align-items: center;  // Alinea verticalmente los elementos
-justify-content: center;  // Centra los elementos horizontalmente
-gap: 10px;  // Espacio entre el texto y el enlace
-margin-top: 30px;  // Aumenta el espacio por encima del contenedor, si es necesario
+  align-items: center; /* // Alinea verticalmente los elementos*/
+justify-content: center; /* // Centra los elementos horizontalmente*/
+gap: 10px; /* // Espacio entre el texto y el enlace*/
+margin-top: 30px;
 }
 
 .account-existence .login-link {
-  color: #00933c;  // Ajusta el color del enlace si es necesario
-text-decoration: yes;  // Opcional: elimina el subrayado del enlace
+  color: #00933c; /* // Ajusta el color del enlace si es necesario*/
+text-decoration: yes;  /*// Opcional: elimina el subrayado del enlace*/
 }
 
 /* login.component.css */
@@ -204,4 +204,3 @@ button.full-width-input {
   text-decoration: underline; /* Subraya para indicar que es un enlace */
 }
 
-.account-existence

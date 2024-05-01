@@ -7,7 +7,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -27,13 +27,17 @@ export class RegisterComponent {
     remember: false
   });
   hide = true;
-
-  constructor(private fb: FormBuilder) {}
+  
+  constructor(private fb: FormBuilder, private router: Router) {}
 
   onSubmit() {
     if (this.RegisterForm.valid) {
       console.log('Form data', this.RegisterForm.value);
       // Implement your login logic here
     }
+  }
+
+  redirectToLogin() {
+    this.router.navigateByUrl('/login'); // Redirige hacia la ruta '/login'
   }
 }

@@ -21,8 +21,8 @@
 
         <mat-checkbox formControlName="remember">Recuérdame</mat-checkbox>
         <div class="login-actions">
-          <button mat-raised-button color="primary" type="submit" class="full-width-input">Ingresar</button>
-          <a mat-button class="login-link">¿Aún no tienes una cuenta? Regístrate Aquí</a>
+          <button mat-raised-button color="primary" type="submit" class="full-width-input" (click)="redirectToSidebar()">Ingresar</button>
+          <a mat-button class="login-link" (click)="redirectToRegister()">¿Aún no tienes una cuenta? Regístrate Aquí</a>
         </div>
       </form>
     </mat-card-content>
