@@ -1,5 +1,6 @@
 .sidenav-container {
   height: 100%;
+  background: white;
 }
 
 mat-toolbar{
@@ -23,6 +24,7 @@ mat-toolbar{
   text-align: center;
   font-weight: bold;
   width: 100%;
+
 }
 
 .sidenav-btn{
