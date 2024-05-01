@@ -1,0 +1,22 @@
+.container{
+  margin-left: 17%;
+  margin-top: 10%;
+  width: 1000px;
+}
+
+.map-btn{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.map-container{
+  text-align: center;
+}
+
+.row-inputs{
+  margin-top: 5%;
+}
+
+.second-col{
+  margin-left: 50%;
+}

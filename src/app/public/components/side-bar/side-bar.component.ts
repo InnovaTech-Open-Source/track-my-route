@@ -9,6 +9,7 @@ import {MatIcon} from "@angular/material/icon";
 import {PayTicketComponent} from "../../pages/pay-ticket/pay-ticket.component";
 import {PromosComponent} from "../../pages/promos/promos.component";
 import {HelpComponent} from "../../pages/help/help.component";
+import {SearchRoutesComponent} from "../../pages/search-routes/search-routes.component";
 import {NotificationsComponent} from "../../pages/notifications/notifications.component";
 import {HistoryComponent} from "../../pages/history/history.component";
 import {ConfigComponent} from "../../pages/config/config.component";
@@ -28,6 +29,7 @@ import {ConfigComponent} from "../../pages/config/config.component";
     MatIcon,
     PayTicketComponent,
     HelpComponent,
+    SearchRoutesComponent,
     NotificationsComponent,
     PromosComponent,
     HistoryComponent,

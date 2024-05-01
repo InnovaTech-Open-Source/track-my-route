@@ -1,1 +1,29 @@
-<p>search-routes works!</p>
+
+<div class="container">
+  <h1 class="title" style="text-align: center">Busca tu ruta!</h1>
+  <div class="map-container">
+    <google-map height="400px"
+                width="100%"
+                [center]="center"
+                [zoom]="zoom">
+      <map-directions-renderer *ngIf="(directionsResults$ | async) as directionsResults"
+                               [directions]="directionsResults"></map-directions-renderer>
+    </google-map>
+  </div>
+  <div class="row-inputs">
+    <div class="col-first-input">
+      <mat-form-field class="example-full-width">
+        <mat-label>Origen</mat-label>
+        <textarea matInput placeholder="Av. Miguel Grau..."></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width second-col">
+        <mat-label>Destino</mat-label>
+        <textarea matInput placeholder="Av. Miguel Grau..."></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="map-btn">
+    <mat-button-toggle>Buscar!</mat-button-toggle>
+  </div>
+</div>
