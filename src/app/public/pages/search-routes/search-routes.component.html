@@ -4,19 +4,17 @@
   <div class="map-container">
     <google-map height="400px"
                 width="100%"
-                [center]="center"
-                [zoom]="zoom">
-      <map-directions-renderer *ngIf="(directionsResults$ | async) as directionsResults"
-                               [directions]="directionsResults"></map-directions-renderer>
+                [options]="options">
+      @if (directionsResults$ | async; as directionsResults) {
+      <map-directions-renderer [directions]="directionsResults"/>
+      }
+      <map-heatmap-layer></map-heatmap-layer>
+      <map-traffic-layer></map-traffic-layer>
     </google-map>
   </div>
   <div class="row-inputs">
     <div class="col-first-input">
-      <mat-form-field class="example-full-width">
-        <mat-label>Origen</mat-label>
-        <textarea matInput placeholder="Av. Miguel Grau..."></textarea>
-      </mat-form-field>
-
+      <input>
       <mat-form-field class="example-full-width second-col">
         <mat-label>Destino</mat-label>
         <textarea matInput placeholder="Av. Miguel Grau..."></textarea>
